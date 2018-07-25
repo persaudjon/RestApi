@@ -16,4 +16,9 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                 String.format(template, name));
     }
+
+    @RequestMapping("/sports")
+    public  SportTeam sport(@RequestParam(value = "team", defaultValue = "Yankees") String team){
+        return  new SportTeam(team,12,1);
+    }
 }
