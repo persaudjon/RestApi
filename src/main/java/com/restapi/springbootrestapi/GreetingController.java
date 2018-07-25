@@ -21,4 +21,5 @@ public class GreetingController {
     public  SportTeam sport(@RequestParam(value = "team", defaultValue = "Yankees") String team){
         return  new SportTeam(team,12,1);
     }
+
 }
